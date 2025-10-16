@@ -50,11 +50,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'minitest.urls'
 
-# 👇 ESTA SECCIÓN ES LA QUE TE FALTABA
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],  # Aquí puedes añadir carpetas de templates si quieres
+        'DIRS': [],  
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,7 +74,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Test_db',
-        'USER': 'admin',
+        'USER': 'postgres',
         'PASSWORD': 'Rhae',
         'HOST': 'localhost',
         'PORT': '5432',
